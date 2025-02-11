@@ -48,6 +48,11 @@
             transform: translateY(-50%);
             color: #6c757d;
         }
+        .box {
+            max-height: 90vh;
+            overflow: scroll;
+
+        }
     </style>
 </head>
 <body class="d-flex flex-column align-items-center justify-content-center vh-100">
@@ -69,8 +74,7 @@
     </div>
 
     <!-- Table -->
-    <div class="container mt-4">
-        <div class="">
+    <div class="container box mt-4">
             <table class="table table-bordered text-center">
                 <thead class="table-primary">
                     <tr>
@@ -81,7 +85,6 @@
                 <tbody id="showRow">
                 </tbody>
             </table>
-        </div>
     </div>
     <!-- <button onclick="report()">Report</button> -->
     <script src="./Index.js"></script>
