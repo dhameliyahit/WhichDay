@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Birthday Weekday Finder - Find Your Birthdays' Weekdays from Birth Year to Present">
+    <meta name="description" content="Enter your date of birth and find out what weekday your birthday falls on each year, from your birth year to the present. Fast, easy, and accurate results!">
+    <meta name="keywords" content="birthday day finder, birthday weekday calculator, find birthday weekday, birthday calendar, birthday day of week, birthday history, weekday calculator">
+    <meta name="author" content="Dhameliya Hit">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Birthday Weekday Finder - Find Your Birthdays' Weekdays">
+    <meta property="og:description" content="Discover what weekday your birthday fell on in past years and will fall on in future years!">
+    <meta property="og:image" content="URL_TO_YOUR_PREVIEW_IMAGE">
+    <meta property="og:url" content="YOUR_WEBSITE_URL">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Birthday Weekday Finder">
+    <meta name="twitter:description" content="Enter your birth date and see what weekday your birthday falls on each year.">
+    <meta name="twitter:image" content="URL_TO_YOUR_PREVIEW_IMAGE">
+    <title>Birthday Weekday Finder - Check Your Birthday's Day</title>
+    <link rel="canonical" href="YOUR_WEBSITE_URL">
+
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Bootstrap Icons (for calendar icon) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 500px;
+        }
+        .datepicker-container {
+            position: relative;
+        }
+        .datepicker-container i {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column align-items-center justify-content-center vh-100">
+
+    <div class="container bg-white shadow-lg p-4 rounded">
+        <h4 class="text-center mb-3">Enter Birth Of Date</h4>
+        <h6>And Find Your Birth Date Which Day have</h6>
+        <!-- Date Picker Input -->
+        <div class="mb-3 datepicker-container">
+            <label for="BOD" class="form-label fw-semibold">Select Date:</label>
+            <input type="date" id="BOD" class="form-control shadow-sm" style="padding-right: 40px;">
+            <i class="bi bi-calendar-date"></i> <!-- Bootstrap Icon -->
+        </div>
+        
+        <!-- Button -->
+        <div class="text-center">
+            <button onclick="Run()" class="btn btn-primary w-100 shadow-sm">Find</button>
+        </div>
+    </div>
+
+    <!-- Table -->
+    <div class="container mt-4">
+        <div class="">
+            <table class="table table-bordered text-center">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Year's</th>
+                        <th>Day</th>
+                    </tr>
+                </thead>
+                <tbody id="showRow">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- <button onclick="report()">Report</button> -->
+    <script src="./Index.js"></script>
+</body>
+</html>
